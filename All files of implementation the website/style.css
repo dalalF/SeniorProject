@@ -1,0 +1,192 @@
+/*global styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /*عشان يخلي التنقل بين صفحات الويب 
+    نفسمه يكون سموث اكثر*/
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*هذا الخط الي نسخته من قوقل فونت,
+  وحط لي سان سيريف في حال الخط الاول ما تحمل يكون 
+  فيه غيرة*/
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: rgb(221, 216, 216);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(252, 250, 250);
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+
+button {
+  padding: 1.3rem 2.7rem;
+  background: #f7741e;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.5s ease-in-out;
+  /*هذي خاصيه الترانزشن عشان نضيف حركة ناعمة للرز 
+    بحيث لما ينتقل لحركة الهوفر يصير له الانميشن 
+    واول خانه احدد الخاصيه الي راح تتغير لما يسوي اليورز هوفر 
+    ممكن احط all وراح ينفذ كل الخصائص*/
+  /*ثاني خانه الزمن الي ينفذ فيه الانميشن لو حطيت 
+    واحد سكند بيكون ابطئ*/
+  /*الخانه الثالثه تحدد شكل الانميشن وكيف 
+    راح تكون الحركة*/
+  /*الخاصية الرابعه احدد فيها متى راح يبدا الانميشن 
+  لو حطيت تو سكند, راح يسوي هوفر وبعد تو سكند يصير 
+  الانميشن*/
+  margin: 1.5rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+button:hover {
+  background: #ee7631;
+}
+
+/* Nav Section With HERO */
+
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  min-height: 100vh;
+  /*بما ان الهيدر اخذ عشرة الخلفية اخذت باقي 
+      المساحة الي هي تسعين*/
+
+  background: url(icon/PHOTO-2020-11-25-10-15-08.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  color: #131c27;
+}
+
+.hero h3 {
+  padding: 2rem;
+}
+
+/*الزر راح ارجع للقلوبال ستايلنق واسويه
+  لان ماعندي الا زرين بالصفحه وكلهم نفس الشكل*/
+
+.menu {
+  margin-left: 80rem;
+  margin-bottom: 5rem;
+}
+
+/*footer section*/
+footer {
+  color: #fff;
+  background: #131c27;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  /*هنا عشان اوسطه بنفس طريقتي في توسيط 
+  الموقع بالكامل*/
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button:focus {
+  background: #293b52;
+  outline-style: solid;
+}
+
+/* هذي اضفتها عشان لما يستخدم الموقع بالكيبورد فقط
+راح يوضح له انه واقف على الزر
+الهوفر يوضح مع الماوس بس*/
+.nonex {
+  display: none;
+}
